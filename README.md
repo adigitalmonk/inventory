@@ -2,10 +2,22 @@
 
 This is a extremely lightweight system for tracking assets.
 
+## Configuration
+
+There are three configurable options:
+- `PORT` <- HTTP port that the API will listen on
+- `MONGO_HOST` <- full Mongo route, defaults to localhost, compose is set to point this at the container
+- `MONGO_DATABASE` <- The database to use in the Mongo instance
+- `ACCESS_TOKEN` <- The access token for the `/inventory` routes.
+
+Each can be set in the `services.api.environment` section of the `docker-compose.yml` file.
+
+When using `ACCESS_TOKEN`, you'll need to include the `Authorization` HTTP header.
+It's expected in the form `Token ${ACCESS_TOKEN}`. i.e., `Authorization: Token XQy4MvTw0H7ibqpFeIF`.
+
 ## Run It
 
 This is set up with `docker-compose`, so all you'll need to do is have the Docker runtime online and run `docker-compose up -d`, then you'll be able to hit the API at `http://localhost:8080`.
-
 
 ## Endpoints
 
