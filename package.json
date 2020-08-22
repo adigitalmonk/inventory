@@ -2,7 +2,7 @@
   "name": "inventory",
   "version": "1.0.0",
   "description": "The world's worst inventory management system",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "nodemon src/app.js",
     "lint": "eslint src",
