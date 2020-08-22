@@ -1,8 +1,4 @@
 module.exports = token => {
-    if (!token) {
-        return (_req, _res, next) => next();
-    }
-
     token = `Token ${token}`;    
     return (req, res, next) => {
         const authorization = req.headers.authorization || undefined;
