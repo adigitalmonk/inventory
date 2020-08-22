@@ -1,6 +1,6 @@
 # Inventory
 
-This is a extremely lightweight system for tracking assets.
+This is an extremely lightweight system for tracking assets.
 
 ## Configuration
 
