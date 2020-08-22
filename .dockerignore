@@ -1,0 +1,7 @@
+docker-compose.yml
+Dockerfile
+node_modules
+.git
+data
+.eslintrc.json
+README.md
